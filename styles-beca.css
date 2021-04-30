@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.izquierda {
+  box-sizing: border-box;
+  height: 99.9vh;
+  width: 306px;
+  background-color: #1b0088;
+  color: #ffffff;
+  padding: 51px 35px 0 39px;
+  position: relative;
+  border-bottom: 2px solid #ed1650;
+}
+
+.izquierda h1 {
+  text-align: center;
+  font: normal normal bold 31px/38px Helvetica Neue;
+}
+.izquierda .usuario {
+  display: flex;
+  align-items: center;
+  height: 74.6px;
+  border: 1px solid #eeeeee;
+  border-left: none;
+  border-right: none;
+  margin-top: 40.6px;
+}
+.izquierda .usuario p {
+  font-size: 14px;
+}
+.izquierda .usuario img {
+  margin-left: 19px;
+  margin-right: 10px;
+  height: 35px;
+  width: 35px;
+}
+.izquierda ul {
+  color: #ffffff;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.menu {
+  margin-top: 40px;
+}
+a {
+  font: 16px/23px Arial Black;
+  text-decoration: none;
+  color: white;
+}
+.menu .informe {
+  padding-bottom: 8px;
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #ed1650;
+  background: url("asset-beca/icon-arrow-up.svg") no-repeat right 8px;
+}
+.menu-item li {
+  margin-left: 17px;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  border-bottom: 2px solid #00afa9;
+}
+.menu-item li a {
+  display: block;
+  padding-left: 30px;
+  background: url("asset-beca/ico-reportes.svg") no-repeat left center;
+}
+
+.cerrar-sesion {
+  position: absolute;
+  bottom: 32px;
+  left: 80px;
+  padding-right: 30px;
+  font: 14px Arial;
+  background: url("asset-beca/icon-cerrar-sesion.svg") no-repeat center right;
+}
+.derecha {
+  width: calc(100% - 306px);
+}
+
+.derecha .menu-top {
+  height: 48px;
+  background-color: #0c013b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px 0 9px;
+}
+
+.derecha .menu-top img {
+  display: inline;
+}
+
+.derecha .menu-top p {
+  display: inline;
+  float: right;
+  color: white;
+  padding-left: 20px;
+  background: url("asset-beca/icon-configuration.svg") no-repeat center left;
+}
+.derecha h2 {
+  line-height: 81px;
+  padding-left: 54px;
+  display: block;
+  border-bottom: 1px solid #ed1650;
+  background: url("asset-beca/icon-reporte-pink.svg") no-repeat 30px;
+}
+
+.derecha .abajo {
+  display: flex;
+}
+
+.card {
+  box-shadow: 0px 2px 6px hsla(0, 0%, 0%, 0.349);
+  padding: 12px;
+  margin-left: 15px;
+  margin-top: 18px;
+}
+.card h3 {
+  margin-left: 10px;
+  line-height: 31px;
+  color: #1b0088;
+  font-size: 22px;
+}
+
+.abajo .carpetas {
+  display: flex;
+  border: 1px solid #bfbfbf;
+  width: 215px;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  margin-top: 10px;
+}
+.abajo .carpetas a {
+  color: gray;
+  width: 58px;
+  font-size: 10px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: block;
+  padding-top: 50px;
+  background: url("asset-beca/carpeta.svg") no-repeat center 0px;
+  margin: 10px 24px;
+  text-align: center;
+}
+
+.btn-acceder {
+  margin-left: 20px;
+  height: 32px;
+  width: 120px;
+  text-align: center;
+  background-color: #e9124c;
+  border: none;
+  box-shadow: 0px 3px 6px #00000029;
+  color: white;
+}
+.form-reporte {
+  margin-top: 32px;
+  margin-left: 8px;
+}
+select {
+  box-sizing: border-box;
+  height: 39px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  padding: 5px 39px 5px 13px;
+}
+.form-info-requerida {
+  margin-top: 26px;
+  width: 755px;
+  border: 1px solid #bfbfbf;
+  min-height: 450px;
+  position: relative;
+}
+.form-info-requerida h4 {
+  margin-top: 20px;
+  margin-left: 22px;
+  color: #00afa9;
+  margin-bottom: 6px;
+}
+.form-info-requerida .input-custom {
+  padding-left: 16px;
+  width: 178px;
+  height: 39px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: 34px;
+}
+.form-info-requerida input::placeholder {
+  font: arial 12px;
+  color: #666666;
+}
+.form-info-requerida label {
+  display: none;
+}
+.form-info-requerida .subir-archivo {
+  display: block;
+  width: 178px;
+  height: 39px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: 34px;
+  padding: 10px;
+  padding-left: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #666666;
+  background: url("asset-beca/icon-calendario\ \(2\).svg") no-repeat center
+    right 10px;
+}
+
+.input-date {
+  background: transparent url("asset-beca/icon-calendario\ \(1\).svg") no-repeat
+    center right 10px;
+}
+input[type="file"] {
+  display: none;
+}
+.contenedor-botones {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.form-info-requerida .btn-planifica-reporte {
+  border: none;
+  background: #e9124c;
+  width: 132px;
+  height: 34px;
+  box-shadow: 0px 3px 6px #00000029;
+  color: white;
+  margin-right: 30px;
+}
+.form-info-requerida .btn-ejecuta-reporte {
+  width: 132px;
+  height: 34px;
+  border: 1px solid #0AAFA9;
+  color: #0aafa9;
+  background-color: #ffffff;
+}
